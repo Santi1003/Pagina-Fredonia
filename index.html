@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas Ambientales y Sociales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logo de fredonia -->
+    <div class="floating-logo">
+        🚩 Olaya Herrera Sec. Fredonia
+    </div>
+
+    <!-- Botón del menu hamburguesa -->
+    <div class="floating-menu-btn" id="menuBtn">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+
+    <!-- Menu hamburguesa -->
+    <nav class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <h2 class="menu-title">Navegación</h2>
+            <ul class="menu-items">
+                <li>
+                    <a href="#inicio">
+                        <span class="menu-icon">🏠</span>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#problemas">
+                        <span class="menu-icon">⚠️</span>
+                        Problemáticas
+                    </a>
+                </li>
+                <li>
+                    <a href="#accion">
+                        <span class="menu-icon">✊</span>
+                        Actúa
+                    </a>
+                </li>
+                <li>
+                    <a href="#galeria">
+                        <span class="menu-icon">📸</span>
+                        Galería
+                    </a>
+                </li>
+                <li>
+                    <a href="#entrevistas">
+                        <span class="menu-icon">💬</span>
+                        Entrevistas
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu de propuestas -->
+    <div class="proposals-panel" id="proposalsPanel">
+        <div class="proposals-header">
+            <h3>💡 Propuestas de la Comunidad</h3>
+            <div class="close-proposals" id="closeProposals">✕</div>
+        </div>
+        <div class="proposals-content">
+            <div class="comment">
+                <div class="comment-header">
+                    <div class="comment-avatar">MR</div>
+                    <div class="comment-info">
+                        <div class="comment-name">María Rodríguez</div>
+                        <div class="comment-role">Líder Comunitaria</div>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    Es fundamental mejorar y mantener los espacios deportivos del barrio. La renovación de la cancha sintética es un gran avance, pero necesitamos seguir con el mantenimiento y crear más espacios recreativos para nuestros niños y jóvenes.
+                </div>
+                <div class="comment-actions">
+                    <div class="comment-action">
+                        <span>👍</span> 45 Me gusta
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <div class="comment-avatar">JG</div>
+                    <div class="comment-info">
+                        <div class="comment-name">Juan Gómez</div>
+                        <div class="comment-role">Residente</div>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    Propongo continuar con la pavimentación de las calles restantes del barrio. Las calles 9 y 10 ya están listas, pero aún quedan vías sin pavimentar que se vuelven intransitables en época de lluvias.
+                </div>
+                <div class="comment-actions">
+                    <div class="comment-action">
+                        <span>👍</span> 67 Me gusta
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <div class="comment-avatar">LP</div>
+                    <div class="comment-info">
+                        <div class="comment-name">Laura Pérez</div>
+                        <div class="comment-role">Docente</div>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    Debemos replicar el modelo de apoyo a familias vulnerables que se hizo con el Canadiense. Muchas familias necesitan viviendas dignas y seguras. Es necesario crear un programa permanente de mejoramiento de viviendas.
+                </div>
+                <div class="comment-actions">
+                    <div class="comment-action">
+                        <span>👍</span> 52 Me gusta
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <div class="comment-avatar">CM</div>
+                    <div class="comment-info">
+                        <div class="comment-name">Carlos Martínez</div>
+                        <div class="comment-role">Comerciante</div>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    Es urgente construir más puentes y mejorar la conectividad del barrio. El nuevo puente que une Fredonia con Nuevo Paraíso ha mejorado mucho la movilidad, necesitamos más obras como esta para conectar mejor toda la zona.
+                </div>
+                <div class="comment-actions">
+                    <div class="comment-action">
+                        <span>👍</span> 38 Me gusta
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <div class="comment-avatar">AS</div>
+                    <div class="comment-info">
+                        <div class="comment-name">Ana Silva</div>
+                        <div class="comment-role">Joven del Sector</div>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    Propongo crear brigadas de limpieza y mantenimiento ambiental después de las tormentas. El EPA hizo un gran trabajo con los árboles caídos, pero podemos organizarnos como comunidad para prevenir y actuar rápidamente en emergencias.
+                </div>
+                <div class="comment-actions">
+                    <div class="comment-action">
+                        <span>👍</span> 89 Me gusta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu de chat de whatsapp -->
+    <div class="whatsapp-chat-panel" id="whatsappChatPanel">
+        <div class="whatsapp-header">
+            <div class="whatsapp-header-avatar" id="chatAvatar"><img src=""></div>
+            <div class="whatsapp-header-info">
+                <div class="whatsapp-header-name" id="chatName"></div>
+                <div class="whatsapp-header-status" id="chatRole"></div>
+            </div>
+            <div class="close-whatsapp-chat" id="closeWhatsappChat">✕</div>
+        </div>
+        <div class="whatsapp-messages" id="whatsappMessages"></div>
+    </div>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Cambiando el Entorno: Comunidad, educación y sostenibilidad</h2>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h3>Principales Problemáticas</h3>
+        <p style="max-width: 800px; margin: 0 auto;">El barrio Olaya Herrera, es un lugar vibrante donde se entrelazan diversas realidades sociales, económicas y culturales. A pesar de su riqueza comunitaria, enfrenta problemas persistentes como la desigualdad, la falta de oportunidades laborales, la deserción escolar, la violencia juvenil, la escasez de infraestructura social y la falta de participación ciudadana efectiva</p>
+    </section>
+
+    <section class="problems-grid" id="problemas">
+        <div class="problem-card">
+            <div class="problem-image">
+                <img src="/Imagenes/cc1.jpg" alt="Inundaciones">
+                <div class="problem-overlay">
+                    <p>Las fuertes lluvias causan inundaciones frecuentes en el sector, afectando a familias de bajos recursos. La falta de sistemas de drenaje adecuados provoca que las viviendas se aneguen, generando pérdidas materiales y riesgos para la salud.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://noticias625.co/asi-viven-en-la-calle-17-de-fredonia-30-familias-esperan-ayudas/" target="_blank">Así viven en la calle 17 de Fredonia: 30 familias esperan ayudas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="problem-content">
+                <h4>Inundaciones en zonas vulnerables</h4>
+            </div>
+        </div>
+
+        <div class="problem-card">
+            <div class="problem-image">
+                <img src="/Imagenes/cc2.jpg" alt="Residuos">
+                <div class="problem-overlay">
+                    <p>La acumulación de basura en las calles es un problema recurrente que afecta la salud pública. La falta de cultura de reciclaje y contenedores suficientes genera malos olores, plagas y contaminación visual en la comunidad.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://www.semana.com/nacion/articulo/cartagena-lleva-diez-anos-sin-limpiar-canerias/558873/" target="_blank">Cartagena lleva diez años sin limpiar cañerías</a>
+                    </div>
+                </div>
+            </div>
+            <div class="problem-content">
+                <h4>Acumulación de residuos en espacios públicos</h4>
+            </div>
+        </div>
+
+        <div class="problem-card">
+            <div class="problem-image">
+                <img src="/Imagenes/cc3.jpg" alt="Contaminación">
+                <div class="problem-overlay">
+                    <p>La contaminación del aire afecta directamente la salud de los residentes, especialmente niños y adultos mayores. El humo y las partículas suspendidas crean un ambiente poco saludable para toda la comunidad.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://www.eluniversal.com.co/cartagena/2017/06/28/fredonia-padece-por-malas-condiciones-ambientales/" target="_blank">Fredonia padece por malas condiciones ambientales</a>
+                    </div>
+                </div>
+            </div>
+            <div class="problem-content">
+                <h4>Contaminación en zonas residenciales</h4>
+            </div>
+        </div>
+
+        <div class="problem-card">
+            <div class="problem-image">
+                <img src="/Imagenes/cc4.jpg" alt="Incendio">
+                <div class="problem-overlay">
+                    <p>Los incendios en viviendas precarias dejan a familias enteras sin hogar. La falta de prevención y respuesta rápida ante emergencias pone en riesgo vidas y destruye el patrimonio de las familias más vulnerables.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://cvnoticias.com.co/en-cartagena-alcaldia-local-2-realiza-acompanamiento-a-victimas-de-incendio-en-fredonia/" target="_blank">Alcaldía Local 2 realiza acompañamiento a víctimas de incendio en Fredonia</a>
+                    </div>
+                </div>
+            </div>
+            <div class="problem-content">
+                <h4>Devastación tras un incendio en comunidad vulnerable</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="accion">
+        <h3>¿Qué Podemos Hacer?</h3>
+        <p>Es momento de actuar y generar cambios positivos en nuestro sector</p>
+        <button id="openProposals">Conocer Propuestas</button>
+    </section>
+
+    <section class="gallery" id="galeria">
+        <h3>Avances y Transformaciones en la Comunidad</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/Imagenes/cj1.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>El alcalde de Cartagena, Dumek Turbay Paz, dio inicio a las obras de renovación integral de la cancha sintética del barrio Fredonia, con una inversión superior a $1.211 millones. El proyecto incluye la reconstrucción completa del escenario deportivo, instalación de grama sintética, nuevos juegos infantiles, zonas de descanso e iluminación moderna. Esta intervención busca fortalecer la recreación, la seguridad y la integración social de los habitantes del sector.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://www.alertacaribe.com/noticias/bolivar/inicio-la-renovacion-de-la-cancha-sintetica-de-fredonia-en-cartagena-con-una" target="_blank">Alerta Caribe (26 de julio de 2025).</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/Imagenes/cj2.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>El alcalde de Cartagena, Dumek Turbay, cumplió su promesa al niño influencer Santiago Matos, conocido como "el Canadiense", entregándole una nueva vivienda totalmente equipada en el barrio Fredonia. La casa, construida desde cero, simboliza la mejora de las condiciones de vida de su familia y representa un ejemplo de cómo las acciones comunitarias pueden transformar realidades en los barrios de Cartagena.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://www.cartagena.gov.co/noticias/alcalde-dumek-turbay-le-cumplio-el-canadiense-le-entrego-su-nueva-casa-mas-hermosa-fredonia" target="_blank">Alcaldía de Cartagena (31 de octubre de 2025).</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/Imagenes/cj3.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>El gobernador de Bolívar, Yamil Arana Padauí, dio inicio a la pavimentación de la Calle 9 del barrio Fredonia, como parte del plan de rehabilitación vial en Cartagena. La obra, que abarca 430 metros lineales y hace parte de una inversión total de $60.000 millones, busca mejorar la movilidad y la calidad de vida de los habitantes, eliminando los problemas de barro y deterioro en la vía.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://caracol.com.co/2025/03/19/inicio-pavimentacion-de-calle-9-del-barrio-fredonia-en-cartagena-inversion-sera-de-60-mil-millones/" target="_blank">Caracol Radio (19 de marzo de 2025).</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/Imagenes/cj4.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>La Alcaldía de Cartagena, liderada por Dumek Turbay Paz, entregó un nuevo puente en el barrio Fredonia, conectando de forma segura esta zona con Nuevo Paraíso. La obra, construida sobre el Canal Calicanto Viejo, reemplaza una estructura deteriorada y mejora la movilidad y seguridad de cientos de familias. Además, facilita el acceso de los estudiantes a la Institución Educativa de Fredonia, representando un avance clave en infraestructura y bienestar comunitario.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://www.cartagena.gov.co/noticias/alcalde-dumek-turbay-entrega-nuevo-puente-fredonia-seguridad-conexion-para-comunidad" target="_blank">Alcaldía de Cartagena (5 de febrero de 2025).</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/Imagenes/cj5.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>La comunidad de Fredonia celebró la inauguración de la Calle 10, obra liderada por la Gobernación de Bolívar dentro del plan de mejoramiento vial. Con una intervención de 430 metros lineales y la participación de mano de obra local, el proyecto generó empleos y mejoró la movilidad, seguridad y calidad de vida de los habitantes. Esta nueva vía simboliza progreso y esperanza para el barrio.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="https://caracol.com.co/2025/08/26/vecinos-de-fredonia-recibieron-calle-pavimentada-con-recursos-de-la-gobernacion-de-bolivar/" target="_blank">Caracol Radio (26 de agosto de 2025).</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="/Imagenes/cj6.jpg" alt="">
+                <div class="gallery-overlay">
+                    <p>Tras una fuerte tormenta que provocó la caída de más de 20 árboles en el barrio Fredonia, la Alcaldía de Cartagena, a través del Establecimiento Público Ambiental (EPA), realizó labores de poda y tala para mitigar daños en viviendas, vías y en el CDI Nuevo Mundo. Además, se efectuó el rescate y monitoreo de fauna silvestre afectada, demostrando el compromiso ambiental y de seguridad del Distrito con la comunidad.</p>
+                    <div class="source">
+                        <strong>Fuente:</strong> <a href="http://caracol.com.co/2025/06/26/epa-cartagena-atiende-emergencia-de-arboles-caidos-en-fredonia/" target="_blank">Caracol Radio (26 de junio de 2025).</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interviews-section" id="entrevistas">
+        <h3>Entrevistas a la Comunidad</h3>
+        <p class="interviews-subtitle">Estas son algunas de las experiencias y opiniones de los habitantes del barrio</p>
+        <div class="profiles-container">
+            <div class="profile-card" data-person="1">
+                <div class="profile-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23667eea'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle'%3EYL%3C/text%3E%3C/svg%3E"></div>
+                <h4>Yallex José León Castro</h4>
+                <p class="profile-role">Estudiante</p>
+                <button class="chat-btn">Ver Conversación</button>
+            </div>
+            <div class="profile-card" data-person="2">
+                <div class="profile-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23764ba2'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E"></div>
+                <h4>Marina Puello</h4>
+                <p class="profile-role">Ama de casa</p>
+                <button class="chat-btn">Ver Conversación</button>
+            </div>
+            <div class="profile-card" data-person="3">
+                <div class="profile-avatar"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f093fb'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle'%3EMG%3C/text%3E%3C/svg%3E"></div>
+                <h4>Marina Grau Hurtado</h4>
+                <p class="profile-role">Docente</p>
+                <button class="chat-btn">Ver Conversación</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Cambiando el Entorno: Comunidad, educación y sostenibilidad</p>
+        <p>Elaborado por: Santiago Sanabria, Luis Eduardo Garcia, Valentina Suevis, Juan Andrés Montes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
