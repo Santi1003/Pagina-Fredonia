@@ -507,10 +507,14 @@ body {
     box-shadow: -10px 0 50px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+     visibility: hidden;
+    opacity: 0;
 }
 
 .whatsapp-chat-panel.active {
     right: 0;
+     visibility: visible;
+    opacity: 1;
 }
 
 .whatsapp-header {
@@ -676,7 +680,7 @@ body {
 .proposals-panel {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -100%;  /* Esto lo oculta */
     width: 450px;
     height: 100vh;
     background: white;
@@ -684,12 +688,19 @@ body {
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     box-shadow: -10px 0 50px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
+    /* AGREGA ESTAS DOS LÍNEAS IMPORTANTES: */
+    visibility: hidden;
+    opacity: 0;
 }
 
 .proposals-panel.active {
     right: 0;
+    /* AGREGA ESTAS DOS LÍNEAS: */
+    visibility: visible;
+    opacity: 1;
 }
 
+/* Resto del CSS de proposals-panel igual... */
 .proposals-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
